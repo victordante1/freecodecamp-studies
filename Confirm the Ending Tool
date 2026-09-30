@@ -1,0 +1,15 @@
+function confirmEnding(s1, s2) {
+  let letters2ToCheck = s2.length;
+  let letters2ToCheck = s1.slice(-s2.length);
+  console.log(letters2ToCheck)
+  if (letters2ToCheck === s2) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let test = confirmEnding("Bastian", "n");
+console.log(test);
+let test2 = confirmEnding("Connor", "n");
+console.log(test2);
