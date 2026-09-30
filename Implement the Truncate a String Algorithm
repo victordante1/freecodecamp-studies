@@ -1,0 +1,17 @@
+function truncateString(text, n1) {
+  if ((text.length) > n1) {
+    let modText = (text.slice(0, n1));
+    return modText + "...";
+  } else {
+    return text;
+  } 
+}
+
+let test = truncateString("A-tisket a-tasket A green and yellow basket", 8);
+console.log(test);
+let test2 = truncateString("Peter Piper picked a peck of pickled peppers", 11);
+console.log(test2);
+let test3 = truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length);
+console.log(test3);
+let test4 = truncateString("A-tisket a-tasket A green and yellow basket", "A-tisket a-tasket A green and yellow basket".length + 2);
+console.log(test4);
